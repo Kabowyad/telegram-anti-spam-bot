@@ -1,16 +1,9 @@
-import bot.domain.user.User
 import com.bot4s.telegram.api.declarative.Action
-import com.bot4s.telegram.models.{Message, Update}
+import com.bot4s.telegram.models.Update
 
 object handleUpdate extends Action[Update] {
-
-  var data = scala.collection.immutable.HashMap[Option[User], Option[Message]]()
-
-    def getDataFromUpdate(implicit thatUpdate: Update): Unit = {
-    }
-
-  override def apply(thatUpdate: Update): Unit = {
-    implicit val update: Update = thatUpdate
+  override def apply(v1: Update): Unit = {
+    // TODO: do shitty logic here
   }
 }
 

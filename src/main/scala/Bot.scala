@@ -14,12 +14,5 @@ class Bot extends TelegramBot
     reply("My token is safe")
   }
 
-  //  override def receiveMessage(msg: Message): Unit = {
-  //    msg.text.fold(Future.successful(())) { text =>
-  //      request(SendMessage(msg.source, text.reverse)).void
-  //    }
-  //  }
-
   onUpdate(handleUpdate)
-
 }
