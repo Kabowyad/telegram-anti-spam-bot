@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-core" % "1.6.0",
   "org.typelevel" %% "cats-effect" % "1.2.0",
   "com.bot4s" %% "telegram-core" % "4.0.0-RC1",
-  "com.typesafe.slick" %% "slick" % "3.0.0",
+  "com.typesafe.slick" %% "slick" % "3.2.2",
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
 
