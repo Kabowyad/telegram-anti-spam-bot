@@ -13,6 +13,9 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-effect" % "1.2.0",
   "com.bot4s" %% "telegram-core" % "4.0.0-RC1",
   "com.typesafe.slick" %% "slick" % "3.2.2",
+  "mysql" % "mysql-connector-java" % "5.1.34",
+  "com.typesafe" % "config" % "1.3.4",
+  "com.github.pureconfig" %% "pureconfig" % "0.11.1",
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
 
