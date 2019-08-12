@@ -4,7 +4,7 @@ import slick.sql.SqlAction
 
 import scala.concurrent.Future
 
-trait BaseDao extends DatabaseConfig{
+trait BaseDao extends DatabaseConfig {
   val usersTable = TableQuery[UserDBTable]
 
   protected implicit def executeFromDb[A](action: SqlAction[A, NoStream, _ <: slick.dbio.Effect]): Future[A] = {
