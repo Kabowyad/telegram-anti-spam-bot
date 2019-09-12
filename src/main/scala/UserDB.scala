@@ -1,1 +1,1 @@
-case class UserDB(id: Int, userId: Int, textMessage: String)
+case class UserDB(userId: Int, textMessage: String, id: Int = 0)

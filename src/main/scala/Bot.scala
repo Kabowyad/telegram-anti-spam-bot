@@ -11,8 +11,18 @@ class Bot extends TelegramBot
   override val client = new ScalajHttpClient(token)
 
   onCommand("/hello") { implicit msg =>
-    reply("My token is safe")
+    reply("Nuka blyad!")
   }
 
-  onUpdate(handleUpdate)
+  onCommand("/test") { implicit msg =>
+    reply("Гриша отъебись")
+  }
+
+//  onUpdate(handleUpdate)()
+  while (true) {
+    val updates = pollingGetUpdates(None)
+    updates.foreach({ x =>
+      x.foreach(y => println(y.message.get))
+    })
+  }
 }

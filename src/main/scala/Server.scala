@@ -1,9 +1,13 @@
+import com.bot4s.telegram.methods.GetUpdates
+import com.typesafe.scalalogging.{LazyLogging, Logger}
+
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 
-object Server extends App {
+object Server extends App with LazyLogging {
 
   override def main(args: Array[String]): Unit = {
+    logger.info("Im alive!")
     val bot = new Bot
     val eol = bot.run()
     scala.io.StdIn.readLine()

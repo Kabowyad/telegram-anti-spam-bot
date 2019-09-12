@@ -5,5 +5,5 @@ class UserDBTable(tag: Tag) extends Table[UserDB](tag, "users") {
   def userId = column[Int]("userId")
   def textMessage = column[String]("textMessage")
 
-  override def * = (id, userId, textMessage) <> ((UserDB.apply _).tupled, UserDB.unapply)
+  override def * = (userId, textMessage, id) <> ((UserDB.apply _).tupled, UserDB.unapply)
 }
