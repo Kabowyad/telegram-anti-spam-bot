@@ -1,5 +1,4 @@
-import com.bot4s.telegram.methods.GetUpdates
-import com.typesafe.scalalogging.{LazyLogging, Logger}
+import com.typesafe.scalalogging.LazyLogging
 
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration

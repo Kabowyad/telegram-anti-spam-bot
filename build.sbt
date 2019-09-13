@@ -3,7 +3,7 @@ import sbt.Keys.version
 lazy val root = (project in file(".")).
   settings(
     name := "telegram-anti-spam-bot",
-    version := "0.4",
+    version := "0.0.13",
     scalaVersion := "2.12.7",
     mainClass in Compile := Some("Server")
   )
@@ -17,7 +17,8 @@ libraryDependencies ++= Seq(
   "com.typesafe" % "config" % "1.3.4",
   "com.github.pureconfig" %% "pureconfig" % "0.11.1",
   "ch.qos.logback" % "logback-classic" % "1.2.3",
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
+  "com.github.nscala-time" %% "nscala-time" % "2.22.0"
 )
 
 javaOptions := Seq("-Xdebug", "-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=36268")
